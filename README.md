@@ -1,0 +1,9 @@
+    # Password Manager
+    #### Video Demo:  https://youtu.be/U_EgLKVbT0s
+    #### Description:
+
+    I chose to work on a password manager as I was intrigued by the thought of having security over sensitive information through encryption. I used the cryptography module to load a key that would essentially encrpyt user input so that it's privately stored on their device. Additionally, I was able to excersise many new skills I learned throughout the CS50 course when making this project. In this project I implemented my own functions to perform tasks such as adding passwords, viewing them, or loading an encryption key. I also used inputted/outputted data from external files to accomplish certain tasks in the software. Additionally, I made use of common programming elements such as loops and if statements.
+
+    This project is essentially software that helps store and encrypt your passwords to your device. The user is then able to view their decrpyted passwords whenever.
+
+    The user is prompted with a main menu which asks for an input to access different features of the software. They can either add passwords, view their stored passwords, or exit the system. To add a password they would need to input both a username and password (kind of like having a key and it's value), which is then stored into the passwords.txt file. In this file, the password is encrypted by the key stored in the key.key file. This key is loaded into our software using our load_key function. After the user successfully adds their password, they return back to the main menu where they can choose to view their stored passwords. The view function comes into play, by reading the passwords.txt file and decrpyting the password to output onto the screen. Once the user is satisfied, they can finally exit the software through the third option in the main menu.
